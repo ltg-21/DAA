@@ -1,0 +1,20 @@
+@startuml
+start
+:Login;
+if (Aktor adalah Pelanggan?) then (Ya)
+  :Melihat Menu;
+  :Membuat Pesanan;
+  :Melacak Status Pesanan;
+else (Tidak)
+  if (Aktor adalah Staf?) then (Ya)
+    :Melihat Pesanan Aktif;
+    :Memproses Pesanan;
+    :Mengupdate Status Pesanan;
+  else
+    :Login sebagai Admin;
+    :Mengelola Menu;
+    :Melihat Laporan Penjualan;
+  endif
+endif
+stop
+@enduml
