@@ -1,0 +1,17 @@
+@startuml
+start
+:Pengguna membuka aplikasi;
+:Pengguna login atau registrasi;
+if (Apakah login sukses?) then (yes)
+  :Tampilkan dashboard utama;
+  :Pengguna menambah konsumsi air;
+  :Sistem mencatat konsumsi air;
+  :Pengguna melihat riwayat konsumsi air;
+  :Sistem menampilkan riwayat konsumsi;
+  :Pengguna menerima pengingat hidrasi;
+else (no)
+  :Tampilkan pesan kesalahan;
+  :Pengguna mengulangi proses login;
+endif
+stop
+@enduml

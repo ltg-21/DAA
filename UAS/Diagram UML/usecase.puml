@@ -1,0 +1,14 @@
+@startuml
+actor User as "Pengguna"
+
+User --> (Login)
+User --> (Tambah Konsumsi Air)
+User --> (Lihat Riwayat Konsumsi Air)
+User --> (Terima Pengingat Hidrasi)
+
+(Login) --> (Sistem Memeriksa Kredensial Pengguna)
+(Tambah Konsumsi Air) --> (Sistem Mencatat Jumlah Air)
+(Lihat Riwayat Konsumsi Air) --> (Sistem Menampilkan Riwayat)
+(Terima Pengingat Hidrasi) --> (Sistem Mengirim Notifikasi)
+
+@enduml
